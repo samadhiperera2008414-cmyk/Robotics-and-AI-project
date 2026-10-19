@@ -26,6 +26,10 @@ def generate_maze(width=21, height=21, seed=None):
     return grid
 
 
-def print_maze(grid):
-    for row in grid:
-        print("".join("#" if cell else " " for cell in row))
+def print_maze(grid, path=None):
+    path_set = set(path) if path else set()
+    for y, row in enumerate(grid):
+        print("".join(
+            "#" if cell else ("." if (x, y) in path_set else " ")
+            for x, cell in enumerate(row)
+        ))
