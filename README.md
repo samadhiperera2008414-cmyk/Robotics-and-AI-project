@@ -1,5 +1,3 @@
+
 # Robotics-and-AI-project
-git status
-git add README.md
-git commit -m "Update project README"
-git push origin main
+A maze solver visualizer comparing BFS, DFS and A* path planning, built in Python.
