@@ -1,4 +1,5 @@
 # Robotics-and-AI-project
-Project: Robotics and AI
-Objective: Develop and test the project.
-Current status: Initial planning completed.
+git status
+git add README.md
+git commit -m "Update project README"
+git push origin main
